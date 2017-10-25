@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/konva.min.js"></script>
+	<script src="js/myCircle(canvas).js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/fullPage.js"></script>
+	<title>李跃平的简历</title>
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="browsehappy" role="dialog" style="text-align:center">
+   		 	当前网页 <strong>不支持</strong> 你正在使用的浏览器. 
+    		为了正常的访问, 请 <a href="http://browsehappy.com/"target="_blank" style="color:red">升级你的浏览器</a>。
+		</div>
+	<![endif]-->
+		<!-- 顶部头像栏 -->
+		<div id="bar">
+			<a href="#"><img class="logo" src="./images/avatar.jpg" alt=""></a>	
+			<div class="link icon-search">
+				<i class="link-box">
+					<a href="#" contextmenu="github"><i class="icon-github"></i></a>
+					<a href="#"><i class="icon-msg"></i></a>
+					<a href="#"><i class="icon-android"></i></a>	
+				</i>
+			</div>
+		</div>
+		<div id="arrow" style="display: block;"></div>
+		<!-- 全屏页面 -->
+		<div class="sections">
+			<div class="section" id="section0">
+				<div class="container">
+					<div class="avatar"><img src="images/me.JPG"></div>
+					<div class="motto">
+						<p>渐变之而为之，故觅之而维尚！</p>
+						<div class="line"></div>
+					</div>
+					<div class="info">
+						<p><i class="icon-12">我是李跃平</i></p>
+						<p>喜欢折腾，没事的时候喜欢做点小东西..</p>
+						<p>爱好编程，理想是做一个懂产品、会设计、能做全栈的前端工程师..</p>
+						<p>zu1662@163.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section1">
+				<div class="container">
+					<h1>关于我</h1>
+					<ul>
+						<li>
+							<p class="icon"><i class="icon-user-o"></i></p>
+							<p class="msg">年龄/25岁</p>
+						</li>
+						<li>
+							<p class="icon"><i class="icon-book"></i></p>
+							<p class="msg">学历/本科</p>
+						</li>
+						<li>
+							<p class="icon"><i class="icon-management"></i></p>
+							<p class="msg">坐标/苏州</p>
+						</li>
+						<li>
+							<p class="icon"><i class="icon-ordered"></i></p>
+							<p class="msg">状态/在职</p>
+						</li>
+					</ul>
+					<div class="line"></div>
+					<h1>联系我</h1>
+					<div class="links">
+						<a href="https://github.com/zu1662"  target="_blank"><p class="link"><i class="icon-github"></i></p></a>
+						<a href="tencent://message/?uin=1834861929"><p class="link"><i class="icon-wechat-o"></i></p></a>
+						<p class="bjey"><i class="icon-bjey"></i></p>
+						<a href="www.hezz.top" target="_blank"><p class="link"><i class="icon-home-m "></i></p></a>
+						<a href="mailto:zu1662@163.com"><p class="link"><i class="icon-info "></i></p></a>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="container">
+					<h1>技能栈</h1>
+					<dic id="skillCircle"></dic>
+					<div class="skills">
+						<p>熟悉 HTML(5)、CSS(3)、Javascript</p>
+						<p>熟练使用 jQuery 、bootstrap框架</p>
+						<p>能使用ajax与后台进行数据的交互</p>
+						<p>了解Node.js、MongoDB，使用其以及Express等框架进行了个人主页的简单搭建。</p>
+						<p>对前端其他的一些框架有了解，还在学习中。。。</p>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="container">
+					<h1>作品集</h1>
+					<div class="lists" id="lists">
+				        <div class="list">
+				        	<div class="list-body">
+				        		<div class="pic" style="background-image: url(images/hpu.png);"></div>
+				        		<a href="https://zu1662.github.io/HPU-HomePage/" target="_blank"><div class="desc"><p>仿HPU主页页面</p><p>使用原生css实现整体布局</p></div></a>
+				        		<div class="slant reverse-slant" ></div>
+				        		<div class="slant"></div>
+				        		<div class="lable">仿HPU页面<div id="line"></div></div>
+				        	</div>
+				        </div>
+				         <div class="list">
+				        	<div class="list-body">
+				        		<div class="pic" style="background-image: url(images/resume.jpg);"></div>
+				        		<a href="#"><div class="desc"><p>自己的个人简历</p><p>全屏界面、多项功能</p></div></a>
+				        		<div class="slant reverse-slant" ></div>
+				        		<div class="slant"></div>
+				        		<div class="lable">我的个人简历<div id="line"></div></div>
+				        	</div>
+				        </div>
+				         <div class="list">
+				        	<div class="list-body">
+				        		<div class="pic" style="background-image: url(images/myblog.jpg);"></div>
+				        		<a href="#"><div class="desc"><p>自己的个人主页</p><p>使用Node.js、MongoDB搭建。后台运用了Express、ejs等框架，前端使用了amazeui进行页面快速布局。</p></div></a>
+				        		<div class="slant reverse-slant" ></div>
+				        		<div class="slant"></div>
+				        		<div class="lable">我的个人博客<div id="line"></div></div>
+				        	</div>
+				        </div>
+				</div>
+			</div>
+			<div class="section" id="section4">
+				<div class="container">
+					<h1>Hello Word</h1>
+					<ul>
+						<li><p style="color: #E54A34">灵感</p></li>
+						<li><p style="color: #3CB10D">代码</p></li>
+						<li><p style="color: #FE6A00">梦想</p></li>
+						<li><p style="color: #008BD3">未来</p></li>
+					</ul>
+					<p class="text">注重效率，偏爱敏捷开发</p>
+					<p class="text">喜欢尝试，期待新鲜事物</p>
+					<p class="text">前端即兴趣，兴趣即未来</p>
+					<p class="text">行路有良友，便是捷径</p>
+					<p class="text">带上我吧，一起看到更大的世界</p>
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
